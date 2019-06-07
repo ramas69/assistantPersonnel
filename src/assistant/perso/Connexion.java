@@ -26,7 +26,7 @@ public class Connexion {
 			String port = "3306";
 			String nomBase = "assistant";
 			String conString = protocole + "//" + ip + ":" + port + "/"
-					+ nomBase;
+					+ nomBase + "?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
 
 
 			// Identifiants de connexion et mot de passe
